@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="Won Subin">
+  <title>Trip to OSAKA!</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script language="JavaScript">
+ function jsClock(){
+ var time = new Date()
+ var hour = time.getHours()
+ var minute = time.getMinutes()
+ var second = time.getSeconds()
+ var temp = "" + ((hour > 12) ? hour - 12 : hour)
+ if(hour==0) temp = "12"
+ if(temp.length==1) temp = " " + temp
+ temp += ((minute < 10) ? ":0" : ":") + minute
+ temp += ((second < 10) ? ":0" : ":") + second
+ temp += (hour >= 12) ? " PM" : " AM"
+ document.clockForm.digits.value = temp
+ id = setTimeout("jsClock()",1000)
+ }
+ </script>
+<script language="JavaScript"> 
+popup=window.open("popup.html","popup","scrollbars=0,width=520,height=400,left=0,top=0")
+</script>
+</head>
+<embed src="백예린 - 가끔.mp3" autostart="true" loop="true" width="280" height="45" hidden="true">
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<table width="940" cellpadding="0" cellspacing="0" height="835" bgcolor="white" align="center">
+    <tr>
+        <td width="940" height="108" bgcolor="#FFCCCC">
+            <p align="center"><font face="Comic Sans MS" color="#4C4C4C"><span style="font-size:22pt;"><b><img src="hover-icon.png" width="29" height="26" border="0" alt="hover-icon.png"></b></span></font><span style="font-size:22pt;"><b><font face="Comic Sans MS" color="#4C4C4C"> TRIP TO OSAKA</font><font face="나눔고딕 ExtraBold"> </font></b></span><img src="hover-icon.png" width="29" height="26" border="0" alt="hover-icon.png"></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="940" height="100">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    #nav {
+     list-style: none;	
+     height: 45px;
+     width : 900;
+     margin: 0;
+     background: #7D7D7D;
+     border-radius: 1.5em;	
+     }
+
+    #nav ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     position: absolute;
+     left: 0;
+     top: 45px;
+     width: 150px;
+     background-color: #DDDDDD;
+     border: 1px solid #B4B4B4;
+     border-radius: 8px;
+     box-shadow: 0 1px 3px RGBA(0, 0, 0, 0.3);
+     opacity: 0;
+     }
+
+ 
+    #nav ul a {
+      font-weight: normal;
+      text-shadow: 0 1px 0 #FFFFFF
+      color: #33333;
+     }
+
+    #nav ul li {
+      float: none;
+      margin: 0;
+      padding: 0;
+     }
+
+   #nav ul li:hover a {
+     background: #81BEF7;
+     color: #170B3B;
+     text-shadow: 0 1px RGBA(0, 0, 0, 0.1);
+     border-radius: 1.4em;
+    }
+
+    #nav li {
+      float: left;			 
+      position: relative;		 
+      margin: 5px 60px;
+     }
+
+   #nav li a {
+      display: block;			
+      font-family: "Trebuchet MS",Dotum,Arial;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 20px;
+      color: #E7E5E5;
+      text-decoration: none;
+      margin: 0;
+      border-radius: 1.4em;
+      text-shadow: 0 1px 1px RGBA(0, 0, 0, 0.3);
+    }
+
+   #nav li:hover ul {
+     opacity: 1;
+    }
+
+  #nav li:hover a {
+    background: #EBEBEB;
+    color: #444444;
+    text-shadow: 0 1px 1px RGBA(255, 255, 255, 1);
+    border-radius: 1.4em
+   }
+</style>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+    $(document).bind("contextmenu", function(e){
+        alert("오른쪽 마우스 금지");
+        return false;
+    });
+ 
+    $('img').bind("contextmenu",function(e){ 
+        alert("그림에서 오른쪽 마우스 금지"); 
+        return false; 
+    }); 
+ 
+    $('img').bind("selectstart",function(e){ 
+        alert("그림에서 오른쪽 마우스 금지"); 
+        return false;  
+    }); 
+}); 
+document.oncontextmenu=function(){return false;} // 우클릭 방지
+document.onselectstart=function(){return false;} // 드래그 방지
+document.ondragstart=function(){return false;} // 선택 방지
+document.onmousedown=function(){return false;}
+</script>
+
+  <ul id="nav">
+    <li><a href="info.html">Information</a></li>
+    <li><a>Attraction</a>
+      <ul>
+        <li><a href="univ.html">Universal Studio</a></li>
+	<li><a href="umeda.html">Umeda</a></li>
+	<li><a href="doton.html">Dotonbori</a>
+	</li></ul>
+        </li>
+    <li><a>Food</a>
+      <ul>
+	<li><a href="fnamba.html">Namba</a></li>
+	<li><a href="fumeda.html">Umeda</a>
+	</li></ul>
+     </li><li><a href="tip.html">Tip</a></li>
+       </ul>
+</body>
+</html>
+
+    </td>
+    </tr>
+    <tr>
+        <td width="940" height="535" bgcolor="#AFEBE3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="osaka.jpg" width="640" height="425" border="0" name="image1"></td>
+    </tr>
+    <tr>
+        <td width="940" height="90">
+          <p align="center"><font face = "나눔고딕">현재시간</p>
+<body onload="jsClock()">
+<form name="clockForm">
+<font face="Courier New,Courier" size=3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="digits" size=7 value="Loading">
+</font>
+</form>
+</body>
+</td>
+    </tr>
+    <tr>
+        <td width="940" height="38" bgcolor="#FFCCCC">
+            <p align="center"><span style="font-size:10pt;"><font face="나눔고딕" color="#4C4C4C">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+제작자 : 원수빈 - 이메일: dnjstnqls@hanmail.net</font></span></p>
+        </td>
+    </tr>
+</table>

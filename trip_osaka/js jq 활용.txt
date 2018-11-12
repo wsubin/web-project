@@ -1,0 +1,75 @@
+
+
+1. 오른쪽 마우스 사용 금지
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $(document).bind("contextmenu", function(e){
+        alert("오른쪽 마우스 금지");
+        return false;
+    });
+ 
+    $('img').bind("contextmenu",function(e){ 
+        alert("그림에서 오른쪽 마우스 금지"); 
+        return false; 
+    }); 
+ 
+    $('img').bind("selectstart",function(e){ 
+        alert("그림에서 오른쪽 마우스 금지"); 
+        return false;  
+    }); 
+}); 
+document.oncontextmenu=function(){return false;} // 우클릭 방지
+document.onselectstart=function(){return false;} // 드래그 방지
+document.ondragstart=function(){return false;} // 선택 방지
+document.onmousedown=function(){return false;}
+</script>
+
+
+
+2. 사이트 접속 시 팝업창 띄우기
+
+<script language="JavaScript"> 
+popup=window.open("popup.html","popup","scrollbars=0,width=400,height=200,left=0,top=0")
+</script>
+
+
+
+3. 팝업창 하루에 한번만 띄우기
+
+<table width="500" height="50" cellpadding="0" cellspacing="0"><form name="form">
+  <tr>
+    <td width=400 height="25" bgcolor="#333333" align="center">
+      <font color="white"; size="2">오늘은 안내 창을 다시 열지 않음</font>
+      <input type=checkbox name="popup" value="" onClick="javascript:dayclose();"></td>
+    <td width="100" height"25" bgcolor="#333333" align="center">
+      <a href="javascript:window.close()"><font color="#ffffff" size="2">닫기</font></a>
+    </td>
+  </tr>
+</form>
+</table>
+
+
+
+4. 일정시간 후 홈 화면으로 이동 
+
+<script language="javascript">
+  function window_onload(){
+    setTimeout('go_url()',50000)  // 5분후 go_url() 함수 호출
+    }
+  function go_url(){
+    location.href="index.html"  // 페이지 이동
+    }
+</script>
+
+
+<body onload="javascript:window_onload()">
+
+
+
+5. 홈화면으로 가는 버튼 생성
+
+<input type="button" value="홈화면으로 이동" onclick="location.href='index.html'"> 
+
